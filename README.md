@@ -308,6 +308,7 @@ El pipeline integra el 100 % de los casos con departamento conocido (26.554) con
   registros_casos_inmlcf   26554
   casos_esperados          26554
   cuadre_casos             OK
+```
 
 **Consulta de ejemplo** (más en `sql/consultas.sql`):
 
