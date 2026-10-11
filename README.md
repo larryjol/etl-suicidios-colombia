@@ -8,10 +8,10 @@
 
 ## Integrantes
 
-|Nombre|Usuario de GitHub|
-|-|-|-|
-|William Andrés Linarez Salazar|\[@usuario]|
-|Larry Olarte|\larryjol|
+| Nombre | Usuario de GitHub |
+|---|---|
+| William Andrés Linarez Salazar | [@usuario-de-william] |
+| Larry Olarte | @larryjol |
 
 ## Tabla de contenido
 
