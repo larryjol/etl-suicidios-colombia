@@ -11,7 +11,7 @@
 |Nombre|Código|Usuario de GitHub|
 |-|-|-|
 |William Andrés Linarez Salazar|\[código]||
-|Larry Olarte|\[código]|\[|
+|Larry Olarte|\[código]|\larryjol|
 
 ## Tabla de contenido
 
