@@ -1,0 +1,25 @@
+Pipeline ETL - presuntos suicidios por departamento (orquestador: Python (sin Prefect))
+
+[EXTRACT]
+  casos                   26,558 filas x 32 columnas
+  poblacion_2005_2017      1,287 filas x 310 columnas
+  poblacion_2018_2050      2,945 filas x 310 columnas
+[TRANSFORM]
+  casos limpios         26,554 registros x 26 columnas
+  tabla integrada       11,220 filas, 26,554 casos
+  casos sin población        0
+[LOAD]
+  destino              data/warehouse/dw_suicidios.db
+  filas_hechos             11220
+  casos_en_dw              26554
+  duplicados_llave         0
+  huerfanos_departamento   0
+  huerfanos_tiempo         0
+  huerfanos_demografia     0
+  poblacion_no_positiva    0
+  casos_negativos          0
+  registros_casos_inmlcf   26554
+  casos_esperados          26554
+  cuadre_casos             OK
+
+Pipeline terminado en 27 s

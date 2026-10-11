@@ -1,0 +1,13 @@
+{
+  "filas_hechos": 11220,
+  "casos_en_dw": 26554,
+  "duplicados_llave": 0,
+  "huerfanos_departamento": 0,
+  "huerfanos_tiempo": 0,
+  "huerfanos_demografia": 0,
+  "poblacion_no_positiva": 0,
+  "casos_negativos": 0,
+  "registros_casos_inmlcf": 26554,
+  "casos_esperados": 26554,
+  "cuadre_casos": "OK"
+}
