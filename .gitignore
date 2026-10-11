@@ -1,0 +1,19 @@
+# Entorno y caché
+.venv/
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Credenciales y configuración local
+.env
+
+# Datos generados por el pipeline (se reconstruyen con python pipeline.py)
+data/interim/
+data/warehouse/*.db
+
+# Sistema operativo / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

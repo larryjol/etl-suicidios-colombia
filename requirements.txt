@@ -1,0 +1,8 @@
+# Dependencias del pipeline (probadas con Python 3.11)
+pandas==3.0.2
+numpy==2.4.4
+openpyxl==3.1.5        # lectura de los archivos .xlsx
+matplotlib==3.10.9     # figuras de docs/generar_figuras.py
+
+# Opcional: orquestación del flujo con Prefect (python pipeline.py funciona sin él)
+# prefect>=3.0
