@@ -62,7 +62,7 @@ flowchart LR
 
 Las fuentes son archivos que se publican una vez al año, así que el pipeline corre por lotes y reconstruye el resultado completo en cada ejecución. La etapa de extracción deja una copia uniforme en `data/interim` para que cada etapa pueda correr por separado. La transformación sigue el plan de la Entrega 2, organizado en cinco etapas. El destino es SQLite porque no requiere servidor ni credenciales, el volumen es pequeño y permite un esquema estrella con llaves foráneas y validaciones en SQL. `pipeline.py` usa Prefect si está instalado; si no, ejecuta las mismas etapas como script.
 
-**Tecnologías:** Python 3.11, pandas, NumPy, openpyxl, SQLite (`sqlite3`), matplotlib y Prefect (opcional).
+**Tecnologías:** Python 3.11, pandas, NumPy, openpyxl, SQLite (`sqlite3`), matplotlib y Prefect.
 
 ## 4\. Estructura del repositorio
 
@@ -109,7 +109,7 @@ source .venv/bin/activate        # Windows: .venv\\Scripts\\activate
 # 3. Instalar dependencias
 pip install -r requirements.txt
 
-# (Opcional) Orquestación con Prefect
+# Orquestación con Prefect
 pip install prefect
 ```
 
@@ -190,35 +190,35 @@ python -m unittest discover tests
 
 ```mermaid
 erDiagram
-    hechos\_suicidio }o--|| dim\_departamento : cod\_dpto
-    hechos\_suicidio }o--|| dim\_tiempo : anio
-    hechos\_suicidio }o--|| dim\_demografia : id\_demografia
-    hechos\_suicidio {
-        TEXT cod\_dpto PK, FK
+    hechos_suicidio }o--|| dim_departamento : cod_dpto
+    hechos_suicidio }o--|| dim_tiempo : anio
+    hechos_suicidio }o--|| dim_demografia : id_demografia
+    hechos_suicidio {
+        TEXT cod_dpto PK, FK
         INTEGER anio PK, FK
-        INTEGER id\_demografia PK, FK
+        INTEGER id_demografia PK, FK
         INTEGER casos
         INTEGER poblacion
-        REAL tasa\_100k
-        INTEGER baja\_confiabilidad
+        REAL tasa_100k
+        INTEGER baja_confiabilidad
     }
-    dim\_departamento {
-        TEXT cod\_dpto PK
+    dim_departamento {
+        TEXT cod_dpto PK
         TEXT nombre
         TEXT region
     }
-    dim\_tiempo {
+    dim_tiempo {
         INTEGER anio PK
-        TEXT serie\_poblacion
-        INTEGER anio\_provisional
-        INTEGER anio\_pandemia
+        TEXT serie_poblacion
+        INTEGER anio_provisional
+        INTEGER anio_pandemia
     }
-    dim\_demografia {
-        INTEGER id\_demografia PK
+    dim_demografia {
+        INTEGER id_demografia PK
         TEXT sexo
-        TEXT grupo\_edad
-        TEXT ciclo\_vida
-        INTEGER mayor\_de\_edad
+        TEXT grupo_edad
+        TEXT ciclo_vida
+        INTEGER mayor_de_edad
     }
 ```
 
