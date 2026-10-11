@@ -3,8 +3,6 @@
 > Pipeline ETL que toma los casos de presuntos suicidios del INMLCF y las proyecciones de población del DANE, los limpia, homologa e integra para calcular tasas por 100.000 habitantes, y los carga en un data warehouse SQLite con esquema estrella.
 
 **Curso:** ETL — Maestría en Inteligencia Artificial y Ciencia de Datos, Universidad Autónoma de Occidente
-**Periodo:** 2026-2
-**Docente:** Fernando Barraza Alvarado
 
 ## Integrantes
 
