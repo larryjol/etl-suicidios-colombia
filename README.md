@@ -287,28 +287,27 @@ El pipeline integra el 100 % de los casos con departamento conocido (26.554) con
 **Salida de la ejecución** (`docs/salida\_pipeline.txt`):
 
 ```
-\[EXTRACT]
+[EXTRACT]
   casos                   26,558 filas x 32 columnas
-  poblacion\_2005\_2017      1,287 filas x 310 columnas
-  poblacion\_2018\_2050      2,945 filas x 310 columnas
-\[TRANSFORM]
+  poblacion_2005_2017      1,287 filas x 310 columnas
+  poblacion_2018_2050      2,945 filas x 310 columnas
+[TRANSFORM]
   casos limpios         26,554 registros x 26 columnas
   tabla integrada       11,220 filas, 26,554 casos
   casos sin población        0
-\[LOAD]
-  destino              data/warehouse/dw\_suicidios.db
-  filas\_hechos             11220
-  casos\_en\_dw              26554
-  duplicados\_llave         0
-  huerfanos\_departamento   0
-  huerfanos\_tiempo         0
-  huerfanos\_demografia     0
-  poblacion\_no\_positiva    0
-  casos\_negativos          0
-  registros\_casos\_inmlcf   26554
-  casos\_esperados          26554
-  cuadre\_casos             OK
-```
+[LOAD]
+  destino              data/warehouse/dw_suicidios.db
+  filas_hechos             11220
+  casos_en_dw              26554
+  duplicados_llave         0
+  huerfanos_departamento   0
+  huerfanos_tiempo         0
+  huerfanos_demografia     0
+  poblacion_no_positiva    0
+  casos_negativos          0
+  registros_casos_inmlcf   26554
+  casos_esperados          26554
+  cuadre_casos             OK
 
 **Consulta de ejemplo** (más en `sql/consultas.sql`):
 
