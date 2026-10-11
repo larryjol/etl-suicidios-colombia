@@ -107,7 +107,7 @@ source .venv/bin/activate        # Windows: .venv\\Scripts\\activate
 # 3. Instalar dependencias
 pip install -r requirements.txt
 
-# (Opcional) Orquestación con Prefect
+# Prefect
 pip install prefect
 ```
 
