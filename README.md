@@ -10,8 +10,8 @@
 
 |Nombre|Código|Usuario de GitHub|
 |-|-|-|
-|William Andrés Linarez Salazar|\[código]|larryjol|
-|Larry Olarte|\[código]|\[@usuario]|
+|William Andrés Linarez Salazar|\[código]||
+|Larry Olarte|\[código]|\[|
 
 ## Tabla de contenido
 
