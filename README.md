@@ -60,7 +60,7 @@ flowchart LR
 
 Las fuentes son archivos que se publican una vez al año, así que el pipeline corre por lotes y reconstruye el resultado completo en cada ejecución. La etapa de extracción deja una copia uniforme en `data/interim` para que cada etapa pueda correr por separado. La transformación sigue el plan de la Entrega 2, organizado en cinco etapas. El destino es SQLite porque no requiere servidor ni credenciales, el volumen es pequeño y permite un esquema estrella con llaves foráneas y validaciones en SQL. `pipeline.py` usa Prefect si está instalado; si no, ejecuta las mismas etapas como script.
 
-**Tecnologías:** Python 3.11, pandas, NumPy, openpyxl, SQLite (`sqlite3`), matplotlib y Prefect (opcional).
+**Tecnologías:** Python 3.11, pandas, NumPy, openpyxl, SQLite (`sqlite3`), matplotlib y Prefect.
 
 ## 4\. Estructura del repositorio
 
