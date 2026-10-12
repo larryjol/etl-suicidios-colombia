@@ -4,7 +4,7 @@
 
 **Curso:** ETL — Maestría en Inteligencia Artificial y Ciencia de Datos, Universidad Autónoma de Occidente
 
-**Periodo:** [2026-2]
+**Periodo:** 2026-2
 
 **Docente:** Fernando Barraza Alvarado
 
