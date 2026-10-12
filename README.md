@@ -8,7 +8,7 @@
 
 | Nombre | Usuario de GitHub |
 |---|---|
-| William Linarez | @ |
+| William Linarez | @william-and-linarez |
 | Larry Olarte | @larryjol |
 
 ## Tabla de contenido
