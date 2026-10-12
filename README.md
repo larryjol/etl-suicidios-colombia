@@ -43,7 +43,7 @@ Los datos resultantes sirven a entidades de vigilancia epidemiológica, al Minis
 
 |Fuente|Tipo|Origen / URL|Tamaño aprox.|Frecuencia de actualización|Licencia|
 |-|-|-|-|-|-|
-|Presuntos suicidios Colombia 2015-2024, cifras definitivas (INMLCF)|CSV o XLSX|[datos.gov.co](https://www.datos.gov.co) (buscar «Presuntos Suicidios Colombia 2015-2024»)|26.558 filas × 32 columnas|Anual|Datos abiertos del Estado colombiano|
+|Presuntos suicidios Colombia 2015-2024, cifras definitivas (INMLCF)|CSV o XLSX|[datos.gov.co](https://www.datos.gov.co/Justicia-y-Derecho/Presuntos-Suicidios-Colombia-2015-a-2024-Cifras-de/f75u-mirk/about_data)|26.558 filas × 32 columnas|Anual|Datos abiertos del Estado colombiano|
 |Proyecciones de población departamental por área, sexo y edad 2005-2017 (DANE, PPED)|XLSX|[DANE – Proyecciones de población](https://www.dane.gov.co/index.php/estadisticas-por-tema/demografia-y-poblacion/proyecciones-de-poblacion)|1.287 filas × 310 columnas|Por actualización metodológica|Información pública del DANE|
 |Proyecciones de población departamental por área, sexo y edad 2018-2050 (DANE, PPED, actualizada el 30-jul-2025)|XLSX|[DANE – Proyecciones de población](https://www.dane.gov.co/index.php/estadisticas-por-tema/demografia-y-poblacion/proyecciones-de-poblacion)|2.945 filas × 310 columnas|Por actualización metodológica|Información pública del DANE|
 
@@ -128,7 +128,7 @@ El pipeline no usa credenciales. Las rutas tienen valores por defecto dentro del
 
 Los tres archivos fuente están en `data/raw` (11 MB en total), así que el pipeline corre sin descargas. Para actualizar los datos:
 
-1. **INMLCF:** descargar desde [datos.gov.co](https://www.datos.gov.co) el conjunto «Presuntos Suicidios Colombia 2015-2024» en CSV y guardarlo en `data/raw`. El pipeline toma cualquier archivo `Presuntos_Suicidios*.csv`; si no hay CSV, usa el XLSX.
+1. **INMLCF:** descargar desde [datos.gov.co]([https://www.datos.gov.co](https://www.datos.gov.co/Justicia-y-Derecho/Presuntos-Suicidios-Colombia-2015-a-2024-Cifras-de/f75u-mirk/about_data)) el conjunto «Presuntos Suicidios Colombia 2015-2024» en CSV y guardarlo en `data/raw`. El pipeline toma cualquier archivo `Presuntos_Suicidios*.csv`; si no hay CSV, usa el XLSX.
 2. **DANE:** descargar desde la página de [Proyecciones de población](https://www.dane.gov.co/index.php/estadisticas-por-tema/demografia-y-poblacion/proyecciones-de-poblacion) los archivos departamentales por área, sexo y edad (2005-2017 y 2018-2050) y guardarlos en `data/raw` con los nombres definidos en `config.py`.
 
 ## 7\. Ejecución
@@ -358,7 +358,7 @@ ORDER BY tasa_100k DESC;
 
 ## 13\. Referencias
 
-* Instituto Nacional de Medicina Legal y Ciencias Forenses. *Presuntos Suicidios Colombia 2015-2024, cifras definitivas*. Portal de datos abiertos [datos.gov.co](https://www.datos.gov.co).
+* Instituto Nacional de Medicina Legal y Ciencias Forenses. *Presuntos Suicidios Colombia 2015-2024, cifras definitivas*. Portal de datos abiertos [datos.gov.co](https://www.datos.gov.co/Justicia-y-Derecho/Presuntos-Suicidios-Colombia-2015-a-2024-Cifras-de/f75u-mirk/about_data).
 * DANE. *Proyecciones de población y estudios demográficos (PPED) – nivel departamental por área, sexo y edad*, series 2005-2017 y 2018-2050. [dane.gov.co](https://www.dane.gov.co/index.php/estadisticas-por-tema/demografia-y-poblacion/proyecciones-de-poblacion).
 * DANE. *Nota técnica – Proyecciones de población, actualización julio 2025*. [PDF](https://www.dane.gov.co/files/censo2018/proyecciones-de-poblacion/Nacional/NotaTecnica-PPED-jul2025.pdf).
 * Material del curso ETL 2026-2 (prácticas de extracción, calidad de datos, normalización, outliers, Prefect, SQL y modelado dimensional).
