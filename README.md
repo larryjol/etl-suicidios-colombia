@@ -128,7 +128,7 @@ El pipeline no usa credenciales. Las rutas tienen valores por defecto dentro del
 
 Los tres archivos fuente están en `data/raw` (11 MB en total), así que el pipeline corre sin descargas. Para actualizar los datos:
 
-1. **INMLCF:** descargar desde [datos.gov.co]([https://www.datos.gov.co](https://www.datos.gov.co/Justicia-y-Derecho/Presuntos-Suicidios-Colombia-2015-a-2024-Cifras-de/f75u-mirk/about_data)) el conjunto «Presuntos Suicidios Colombia 2015-2024» en CSV y guardarlo en `data/raw`. El pipeline toma cualquier archivo `Presuntos_Suicidios*.csv`; si no hay CSV, usa el XLSX.
+1. **INMLCF:** descargar desde [datos.gov.co](https://www.datos.gov.co/Justicia-y-Derecho/Presuntos-Suicidios-Colombia-2015-a-2024-Cifras-de/f75u-mirk/about_data) el conjunto «Presuntos Suicidios Colombia 2015-2024» en CSV y guardarlo en `data/raw`. El pipeline toma cualquier archivo `Presuntos_Suicidios*.csv`; si no hay CSV, usa el XLSX.
 2. **DANE:** descargar desde la página de [Proyecciones de población](https://www.dane.gov.co/index.php/estadisticas-por-tema/demografia-y-poblacion/proyecciones-de-poblacion) los archivos departamentales por área, sexo y edad (2005-2017 y 2018-2050) y guardarlos en `data/raw` con los nombres definidos en `config.py`.
 
 ## 7\. Ejecución
